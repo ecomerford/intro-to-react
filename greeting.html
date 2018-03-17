@@ -22,8 +22,22 @@ class Greeting extends React.Component {
   }
 }
 
+class Sentence extends React.Component {
+  render() {
+    return (
+      <div>
+      <p>My name is Erin.</p>
+      </div>
+    );
+  }
+}
+
 ReactDOM.render(
-  <Greeting />, document.getElementById("app")
+  <div>
+  <Greeting />
+  <Sentence />
+  </div>,
+  document.getElementById("app")
 );
     </script>
 </body>
